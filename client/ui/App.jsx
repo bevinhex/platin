@@ -8,9 +8,11 @@ export default class App extends Component{
 	render(){
 		return(
 			<div>
-			<Sidebar/>
-			<Header/>
-			{this.props.children}
+				<Sidebar/>
+				<Header opened="true"/>
+				<div style={{paddingTop:'64px'}}>
+					{this.props.children}
+				</div>
 			</div>
 		);
 	}
